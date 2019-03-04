@@ -31,7 +31,3 @@ class Line(Point):
         self.pointA = pt1
         self.pointB = pt2
 
-line1 = Line(Point(2,3), Point(2,7))
-print("Line: {}".format(line1))
-print("Length: {}".format(line1.getLength()))
-
