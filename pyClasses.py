@@ -16,6 +16,9 @@ class Point(object):
         self.coordinateX = cordX
         self.coordinateY = cordY
 
+    def getCoordinates(self) -> tuple:
+        return (self.coordinateX, self.coordinateY)
+
 class Line(Point):
     def __init__(self, pt1, pt2):
         self.pointA = pt1
@@ -31,3 +34,5 @@ class Line(Point):
         self.pointA = pt1
         self.pointB = pt2
 
+    def getPoints(self) -> tuple:
+        return (self.pointA.getCoordinates(), self.pointB.getCoordinates())
