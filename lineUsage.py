@@ -1,4 +1,5 @@
 from pyClasses import Point, Line
+import itertools
 
 def expandPoints(aTuple):
     points = []
@@ -20,4 +21,7 @@ print("Line B: {}".format(line2))
 print("Length: {}".format(round(line2.getLength(), 2)))
 print("Coordinates: {}".format(line2.getPoints()))
 
-print(expandPoints(line2.getPoints()))
+print("Expand using custom function:")
+print(expandPoints(line1.getPoints()))
+print("Expand using itertools:")
+print(list(itertools.chain.from_iterable(line2.getPoints())))
