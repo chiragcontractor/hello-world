@@ -1,3 +1,6 @@
+"""
+Example to demonstrate usage of classes
+"""
 from pyClasses import Point, Line
 import itertools
 
