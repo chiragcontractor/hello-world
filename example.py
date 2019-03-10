@@ -5,6 +5,9 @@ from pyClasses import Point, Line
 import itertools
 
 def expandPoints(aTuple):
+    """
+    Flatten tuples and return a list
+    """
     points = []
     for m in aTuple:
         for i in m:
